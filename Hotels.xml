@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns="https://ahyman23.github.io/cse445_a/Hotels.xsd"
-	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="https://ahyman23.github.io/cse445_a/Hotels.xsd https://ahyman23.github.io/cse445_a/Hotels.xsd">
+<Hotels xmlns="http://venus.sod.asu.edu/WSRepository/xml">
 
 	<Hotel  NearstAirport="Sky Harbor">
 		<Name>Westin</Name>
