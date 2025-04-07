@@ -31,7 +31,7 @@
 							<xsd:element name="Rating" type="xsd:double" minOccurs="0"/>
 						</xsd:sequence>
 						<!-- Hotel must have a nearest airport -->
-						<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+						<xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
 					</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>
