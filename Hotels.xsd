@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://venus.sod.asu.edu/WSRepository/xml"
+            targetNamespace="http://venus.sod.asu.edu/WSRepository/xml"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
+	<xsd:element name="Hotels">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- Any number of hotels -->
+				<xsd:element name="Hotel" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<!-- Hotel contains the following elements -->
+							<xsd:element name="Name" type="xsd:string"/>
+							<xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
+							<xsd:element name="Address">
+								<xsd:complexType>
+									<xsd:sequence>
+										<!-- Address contains the following elements (1 of each) -->
+										<xsd:element name="Number" type="xsd:string"/>
+										<xsd:element name="Street" type="xsd:string"/>
+										<xsd:element name="City" type="xsd:string"/>
+										<xsd:element name="State" type="xsd:string"/>
+										<xsd:element name="Zip" type="xsd:string"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+							<!-- Rating is optional so minoccurs = 0 -->
+							<xsd:element name="Rating" type="xsd:double" minOccurs="0"/>
+						</xsd:sequence>
+						<!-- Hotel must have a nearest airport -->
+						<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

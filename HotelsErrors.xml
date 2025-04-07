@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 1: "Hotel" instead of "Hotels" -->
+<Hotel>
+
+	<Hotel NearestAirport="Sky Harbor">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address>
+			<Number>11</Number>
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+		<Rating>4.2</Rating>
+	</Hotel>
+
+	<!-- 2: Required attribute missing -->
+	<Hotel>
+		<Name>Quality Inn Prescott</Name>
+		<Phone>928-776-1282</Phone>
+		<Address>
+			<Number>1105</Number>
+			<Street>E Sheldon St</Street>
+			<City>Prescott</City>
+			<State>AZ</State>
+			<Zip>86301</Zip>
+		</Address>
+		<Rating>3.9</Rating>
+	</Hotel>
+
+	<!-- 3: Phone element missing -->
+	<Hotel NearestAirport="Prescott Airport">
+		<Name>Holiday Inn Express Prescott</Name>
+		<Address>
+			<Number>3454</Number>
+			<Street>Ranch Dr</Street>
+			<City>Prescott</City>
+			<State>AZ</State>
+			<Zip>86303</Zip>
+		</Address>
+		<Rating>4.6</Rating>
+	</Hotel>
+
+	<!-- 4: Address elect has no closing tag -->
+	<Hotel NearestAirport="Sky Harbor">
+		<Name>Hyatt House Tempe / Phoenix / University</Name>
+		<Phone>480-207-1578</Phone>
+		<Address>
+			<Number>601</Number>
+			<Street>E 6th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		<Rating>4.2</Rating>
+	</Hotel>
+
+	<!-- 5: Two names provided -->
+	<Hotel NearestAirport="Sky Harbor">
+		<Name>Comfort Suites Phoenix Airport</Name>
+		<Name>Sentral Michigan Avenue</Name>
+		<Phone>480-445-9500</Phone>
+		<Address>
+			<Number>1625</Number>
+			<Street>S 52nd St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+		<Rating>4.0</Rating>
+	</Hotel>
+
+	<Hotel NearestAirport="O'Hare">
+		<Name>Sentral Michigan Avenue | Chicago Apartments</Name>
+		<Phone>833-372-4625</Phone>
+		<Phone>312-819-7301</Phone>
+		<Address>
+			<Number>808</Number>
+			<Street>S Michigan Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60605</Zip>
+		</Address>
+		<Rating>4.8</Rating>
+	</Hotel>
+
+	<Hotel NearestAirport="O'Hare">
+		<Name>The Robey</Name>
+		<Phone>872-315-3050</Phone>
+		<Address>
+			<Number>2018</Number>
+			<Street>W North Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60647</Zip>
+		</Address>
+		<Rating>4.6</Rating>
+	</Hotel>
+
+	<Hotel NearestAirport="Midway">
+		<Name>Hotel Felix</Name>
+		<Phone>312-447-3440</Phone>
+		<Address>
+			<Number>111</Number>
+			<Street>W Huron St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60654</Zip>
+		</Address>
+		<Rating>4.1</Rating>
+	</Hotel>
+
+	<Hotel NearestAirport="O'Hare">
+		<Name>The Godfrey Hotel Chicago</Name>
+		<Phone>312-649-2000</Phone>
+		<Address>
+			<Number>127</Number>
+			<Street>W Huron St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60654</Zip>
+		</Address>
+		<Rating>4.1</Rating>
+	</Hotel>
+
+	<Hotel NearestAirport="O'Hare">
+		<Name>Freehand Chicago</Name>
+		<Phone>312-940-3699</Phone>
+		<Address>
+			<Number>19</Number>
+			<Street>E Ohio St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60611</Zip>
+		</Address>
+		<Rating>4.0</Rating>
+	</Hotel>
+
+</Hotel>
